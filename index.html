@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar navbar-expand-lg justify-content-between bg-transparent">
+        <div class="navbar-brand ps-4 ps-lg-5 bg-transparent"><img src="assets/logo.png" alt=""
+                class="navbar-logo bg-transparent "></div>
+        <div class="center-items bg-transparent">
+            <ul class="content-list navbar-nav bg-transparent">
+                <li class="nav-content">Model S</li>
+                <li class="nav-content">Model 3</li>
+                <li class="nav-content">Model X</li>
+                <li class="nav-content">Model Y</li>
+                <li class="nav-content">Solar Roof</li>
+                <li class="nav-content">Solar Panels</li>
+            </ul>
+        </div>
+        <div class="content-list pe-2 pe-lg-4 bg-transparent">
+            <ul class=" navbar-nav bg-transparent">
+                <div class="nav-content">Shop</div>
+                <div class="nav-content">Account</div>
+                <div class="nav-content" onclick="openMenu()">Menu</div>
+            </ul>
+        </div>
+        <button class="btn me-3 mt-2" onclick="openMenu()">MENU</button>
+        <ul class="menu-list" id="menu-list">
+            <button class="button position-absolute" onclick="closeMenu()" >X</button>
+            <li class="responsive-items">
+                <ul class="side-nav-menu">
+                    <li class="side-nav-items">Model S</li>
+                    <li class="side-nav-items">Model 3</li>
+                    <li class="side-nav-items">Model X</li>
+                    <li class="side-nav-items">Model Y</li>
+                </ul>
+            </li>
+
+            <li class="default-items">
+                <ul class="side-nav-menu">
+                    <li class="side-nav-items">Existing Inventory</li>
+                    <li class="side-nav-items">Used Inventory</li>
+                    <li class="side-nav-items">Trade-In</li>
+                    <li class="side-nav-items">Test Drive</li>
+                    <li class="side-nav-items">Insurance</li>
+                    <li class="side-nav-items">Cybertruck</li>
+                    <li class="side-nav-items">Roadster</li>
+                    <li class="side-nav-items">Semi</li>
+                    <li class="side-nav-items">Charging</li>
+                    <li class="side-nav-items">PowerWall</li>
+                    <li class="side-nav-items">Commersial Energy</li>
+                    <li class="side-nav-items">Utilities</li>
+                    <li class="side-nav-items">Find Us</li>
+                    <li class="side-nav-items">Support</li>
+                    <li class="side-nav-items">Investor Relations</li>
+                </ul>
+            </li>
+            <div class="language d-flex">
+                <img src="assets/globe.png" alt="" class="side-nav-item me-2" id="image">
+                <div class="text">
+                    <h6>United States</h6>
+                    <a>English</a>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+
+    <div class="scroll">
+        <section class="position-relative"  style="background-image: url('assets/M3-Homepage-Desktop-LHD.jpg');">
+            <div class="container-fluid center-content-container bg-transparent d-flex justify-content-center">
+                <div class="center-text col-md-6 col-sm-12 bg-transparent position-absolute">
+                    <h1 class="bg-transparent">Model 3</h1>
+                    <h6 class="bg-transparent">Order Online for <span class="delivery-span bg-transparent">Touchless
+                            Delivery</span></h6>
+                </div>
+
+                <div class="container bg-transparent ">
+                    <button class="buttons btn col-md-5 col-lg-3 col-12 me-3" id="cust-ord">Custom Order</button>
+                    <button class="buttons btn col-md-5 col-lg-3 col-12" id="exst-inv">Existing Inventory</button>
+                </div>
+
+            </div>
+        </section>
+        <section class="position-relative img-fluid"  style="background-image: url('assets/M7-Homepage-Desktop-LHD.jpg');">
+            <div class="container-fluid center-content-container bg-transparent d-flex justify-content-center">
+                <div class="center-text col-md-6 col-sm-12 bg-transparent position-absolute">
+                    <h1 class="bg-transparent">Model Y</h1>
+                    <h6 class="bg-transparent">Order Online for <span class="delivery-span bg-transparent">Touchless
+                            Delivery</span></h6>
+                </div>
+
+                <div class="container bg-transparent ">
+                    <button class="buttons btn col-md-5 col-lg-3 col-12 me-3" id="cust-ord">Custom Order</button>
+                    <button class="buttons btn col-md-5 col-lg-3 col-12" id="exst-inv">Existing Inventory</button>
+                </div>
+
+            </div>
+        </section>
+        <section class="position-relative"  style="background-image: url('assets/MS-Homepage-Desktop-LHD.jpg');">
+            <div class="container-fluid center-content-container bg-transparent d-flex justify-content-center">
+                <div class="center-text col-md-6 col-sm-12 bg-transparent position-absolute">
+                    <h1 class="bg-transparent">Model S</h1>
+                    <h6 class="bg-transparent">Order Online for <span class="delivery-span bg-transparent">Touchless
+                            Delivery</span></h6>
+                </div>
+
+                <div class="container bg-transparent ">
+                    <button class="buttons btn col-md-5 col-lg-3 col-12 me-3" id="cust-ord">Custom Order</button>
+                    <button class="buttons btn col-md-5 col-lg-3 col-12" id="exst-inv">Existing Inventory</button>
+                </div>
+
+            </div>
+        </section>
+        <section class="position-relative"  style="background-image: url('assets/MX-Homepage-Desktop-LHD.jpg');">
+            <div class="container-fluid center-content-container bg-transparent d-flex justify-content-center">
+                <div class="center-text col-md-6 col-sm-12 bg-transparent position-absolute">
+                    <h1 class="bg-transparent">Model X</h1>
+                    <h6 class="bg-transparent">Order Online for <span class="delivery-span bg-transparent">Touchless
+                            Delivery</span></h6>
+                </div>
+
+                <div class="container bg-transparent ">
+                    <button class="buttons btn col-md-5 col-lg-3 col-12 me-3" id="cust-ord">Custom Order</button>
+                    <button class="buttons btn col-md-5 col-lg-3 col-12" id="exst-inv">Existing Inventory</button>
+                </div>
+
+            </div>
+        </section>
+        <section class="position-relative"  style="background-image: url('assets/SP-Homepage-Desktop-LHD.jpg');">
+            <div class="container-fluid center-content-container bg-transparent d-flex justify-content-center">
+                <div class="center-text col-md-6 col-sm-12 bg-transparent position-absolute">
+                    <h1 class="bg-transparent">Solar Panels</h1>
+                    <h6 class="bg-transparent">Lowest Cost Solar Panels in America</h6>
+                </div>
+
+                <div class="container bg-transparent ">
+                    <button class="buttons btn col-md-5 col-lg-3 col-12 me-3" id="cust-ord">Order Now</button>
+                    <button class="buttons btn col-md-5 col-lg-3 col-12" id="exst-inv">Learn More</button>
+                </div>
+
+            </div>
+        </section>
+        <section class="position-relative"  style="background-image: url('assets/SR-Homepage-Desktop-LHD.jpg');">
+            <div class="container-fluid center-content-container bg-transparent d-flex justify-content-center">
+                <div class="center-text col-md-6 col-sm-12 bg-transparent position-absolute">
+                    <h1 class="bg-transparent">Solar Roof</h1>
+                    <h6 class="bg-transparent">Produce Clean Energy From Your Roof</h6>
+                </div>
+
+                <div class="container bg-transparent ">
+                    <button class="buttons btn col-md-5 col-lg-3 col-12 me-3" id="cust-ord">Order Now</button>
+                    <button class="buttons btn col-md-5 col-lg-3 col-12" id="exst-inv">Learn More</button>
+                </div>
+
+            </div>
+        </section>
+        <section class="position-relative"  style="background-image: url('assets/Accesories.jpg');">
+            <div class="container-fluid center-content-container bg-transparent d-flex justify-content-center">
+                <div class="center-text col-md-6 col-sm-12 bg-transparent position-absolute">
+                    <h1 class="bg-transparent">Accesories</h1>
+                </div>
+
+                <div class="container bg-transparent ">
+                    <button class="buttons btn col-md-5 col-lg-3 col-12 me-3" id="cust-ord">Shop Now</button>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
